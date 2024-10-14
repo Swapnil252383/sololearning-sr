@@ -1,0 +1,124 @@
+/* Basic styling for Home page */
+.home {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Hero Section (Heading and Button) */
+  .hero-section {
+    background-color: #1c1c24; /* Dark base color */
+    color: white;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    background-image: url("https://yt3.googleusercontent.com/Wc108Gkjxyu8H4lDx7ewr64jtYy4Zw1I9PlwAjkE5lg2VCSqoaKefc0_day1iTlj2dpDleIzNg=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj");
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-blend-mode: overlay; /* Blend the image with the background color */
+    background-color: rgba(28, 28, 36, 0.8); /* Dark overlay to make image less visible */
+  }
+  
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+    color: red;
+  }
+  
+  .explore-button {
+    padding: 12px 30px;
+    background-color: #4ab5f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  .explore-button:hover {
+    background-color: #368ec3;
+  }
+  
+  /* Blog Section */
+  .blogs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .blog {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 20px;
+  }
+  
+  .blog h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .blog-button {
+    display: inline-block;
+    background-color: #4ab5f1;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .blog-button:hover {
+    background-color: #368ec3;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .blogs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .blog {
+      width: 90%;
+    }
+  }
+  
+  /* Fade-in effect for the dynamic text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
